@@ -8,6 +8,7 @@ this is some way to make it nice
 ```
 
 [also another link to my repo] (https://github.com/)
-![my image is here] (https://i.ytimg.com/vi/WmvpSTVu9N4/maxresdefault.jpg)
+
+![my image is here](https://i.ytimg.com/vi/WmvpSTVu9N4/maxresdefault.jpg)
 
 
