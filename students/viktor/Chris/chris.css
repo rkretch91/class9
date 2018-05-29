@@ -1,6 +1,7 @@
 /* General styles - put these straight into your stylesheet */
 
 article {
+    height: 177px;
     margin: 0;
     padding: 0 0 10px 10px;
     background: rgba(0,0,0,0.1);
@@ -46,6 +47,8 @@ article p {
 }
   
 .card article img {
-    max-height: 29vh;
+    position: relative;
+    display: inline-block;
+    height: 100%;
     float: right;
 }
