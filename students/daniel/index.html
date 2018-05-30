@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+
+  body{
+    font-size: 30px;
+  }
+
+.parent1 {
+  font-size: 50px;
+}
+.zuroot {
+  font-size: 0.5rem;
+}
+.zuparent {
+  font-size: 0.5em;
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+  normal
+  <div class="parent1">
+    <h1>Heading is relative to the root size</h1>
+    <div class="zuroot">Text is relative to the root size</div>
+    <div class="zuparent">Text is relative to the parent.</div>
+  </div>
+
+  <div class="parent1">
+    <h1 class="zuparent">Heading is relative to the parent</h1>
+    <div class="zuparent">Text is relative to the parent.</div>
+  </div>
+
+  <div class="parent1">
+    <h1 class="zuparent">Heading is relative to the parent</h1>
+    <div class="zuparent">This is relative to the parent.</div>
+    <div class="parent1">
+      <h1 class="zuroot">Heading is relative to the root size</h1>
+      <div class="zuroot">Text is relative to the root size.</div>
+    </div>
+    <div class="parent1">
+      <h1 class="zuparent">Heading is relative to the parent</h1>
+      <div class="zuparent">Text is relative to the parent.</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
