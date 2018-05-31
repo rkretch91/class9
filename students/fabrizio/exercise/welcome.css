@@ -1,0 +1,33 @@
+*
+{margin: 0;
+padding:0;
+}
+
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  background-color: #ccc;
+}
+h1 , h2 {
+  color: #ed7000;
+}
+.first ,.third {
+  background-color: #333;
+  padding: 30px;
+  margin: 10px;
+}
+.first p{color: #ccc;}
+.second {
+  background-color: #eee;
+  padding: 30px;
+  margin: 10px;
+}
+.third {
+  text-align: center;
+}
+.third span{
+  color: #ccc;
+}
+.second span {
+  color: #ccc;
+}

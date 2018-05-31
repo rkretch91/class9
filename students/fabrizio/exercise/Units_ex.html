@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    body, html{
+      font-size: 10px;
+    }
+    .root {
+      background-color: yellow;
+      font-size: 2rem;
+    }
+    .parent {background-color: green;
+      font-size: 2em;
+
+    }
+
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1>Heading is relative to the root size</h1>
+    <div class="root">Text is relative to the root size</div>
+    <div class="parent">Text is relative to the parent.</div>
+  </div>
+  <div>
+    <h1 class="parent">Heading is relative to the parent</h1>
+    <div class="parent">Text is relative to the parent.</div>
+  </div>
+  <div>
+    <h1 class="parent">Heading is relative to the parent</h1>
+    <div class="parent">This is relative to the parent.</div>
+    <div>
+      <h1 class="root">Heading is relative to the root size</h1>
+      <div class="root">Text is relative to the root size.</div>
+    </div>
+    <div>
+      <h1 class="parent">Heading is relative to the parent</h1>
+      <div class="parent">Text is relative to the parent.</div>
+    </div>
+  </div>
+</body>
+
+</html>

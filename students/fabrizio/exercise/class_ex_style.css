@@ -1,0 +1,9 @@
+.violet {color: violet;}
+.rose {color:#BADA55;}
+
+#honey {color: yellow;}
+/* selector order priority: id; class; paragraph;*/
+
+p{color:blue;}
+p{color:brown;}
+/*  the browser read from top to bottom beetween 2 p selector it sill choose the last one*/
