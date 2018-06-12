@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+	    body {
+	    	font-size: 14px;
+	    	color: #777;
+	    	padding: 100px;
+	    }
+		.container {
+			display: block;
+			position: relative;
+			padding-left: 35px;
+			margin-bottom: 12px;
+			cursor: pointer;
+		}
+		.container input {
+			opacity: 0;
+			position: absolute;
+			cursor: pointer;	
+		}
+		.checkmark {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 70px;
+		}
+		.test {
+			background-color: #ccc;
+			height: 100px;
+		}
+		.test:before {
+			content: 'before';
+		}
+		.test:after {
+			content: 'after';
+		}
+	</style>
+</head>
+<body>
+	<div class="test">&nbsp</div>
+	<h3>Default checkboxes</h3>
+	<input type="checkbox"> One
+	<input type="checkbox"> Two
+	<input type="checkbox"> Three
+
+	<h3>Custom Checkboxes</h3>
+
+	<label class="container">
+		One
+		<input type="checkbox">
+		<span class="checkmark">
+	</label>
+</body>
+</html>
