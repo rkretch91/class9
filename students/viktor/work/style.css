@@ -38,7 +38,7 @@ h5:hover {
 	color: green;
 }
 p {
-	text-align: left;
+	text-align: center;
 	margin-left: 10vh;
 	margin-right: 10vh;
 	color: black;
@@ -112,6 +112,7 @@ ul li ul {
 	position: absolute;
 }
 ul li:hover ul {
+	margin: 15px;
 	display: block;
 }
 ul ul {
