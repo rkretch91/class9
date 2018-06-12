@@ -1,0 +1,126 @@
+body, html {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	background-image: url(bg001.jpg);
+	font-family: Orbitron;
+	width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+}
+body {
+	background-color: black;
+	height: auto;
+}
+a {
+	text-decoration: none;
+	color: white;
+	float: right;
+	padding-right: 30px;
+	font-size: 24px;
+}
+ul {
+	padding: 0;
+	margin: 0;
+}
+nav li {
+	display: inline;
+}
+nav {
+	margin-top: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	display: block;
+	height: auto;
+	background: rgba(0, 0, 0, .5);
+}
+h1, p {
+	margin-bottom: 20px;
+	color: white;
+	text-align: center;
+}
+p {
+	font-size: 20px;
+    padding: 0;
+    margin: auto;
+}
+.row {
+	width: 800px;
+	height: 1000px;
+	margin: auto;
+	background: rgba(0, 0, 0, .3);
+	position: relative;
+	padding: 0;
+}
+.content {
+	position: relative;
+	margin: 0;
+	padding: 0;
+}
+.img1 {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	padding: 0;
+	margin: 0;
+}
+.img2 {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	padding: 0;
+	margin: 0;
+	top: 0;
+	right: 0;
+}
+.img3 {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	padding: 0;
+	margin: 0;
+	top: 500px;
+	left: 0;
+}
+.img4 {
+	position: absolute;
+	width: 400px;
+	height: 250px;
+	padding: 0;
+	margin: 0;
+	top: 500px;
+	right: 0
+}
+.content1 {
+	position: absolute;
+	left: 0; 
+	top: 260px; 
+	width: 400px; 
+	height: 150px;
+}
+.content2 {
+	position: absolute; 
+	right: 0; 
+	top: 260px; 
+	width: 400px; 
+	height: 150px;
+}
+.content3 {
+    position: absolute; 
+    left: 10px; 
+    top: 760px; 
+    width: 400px; 
+    height: 150px
+}
+.content4 {
+	position: absolute;
+	left: 400px;
+	top: 750px;
+	width: 400px;
+	height: 150px;
+}
+.row a {
+	float: left;
+	color: red;
+}
