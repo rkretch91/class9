@@ -1,0 +1,99 @@
+html, body {
+            padding: 0; margin: 0;
+            font-size: 14px;
+            color: #777;
+            box-sizing: border-box;
+            background-image: url(../images/bg_001.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+
+        }
+        header{
+
+
+        }
+
+.logo img {
+  margin-top: 30px;
+  float: left;
+margin-left: 300px;
+display: inline-block;
+padding: 20px;
+
+}
+ol {
+  margin-right: 300px;
+  float: right;
+list-style-type: none;
+  font-size: 45px;
+  text-align: center;
+  color: #fff;
+
+
+}
+li { display: inline-block;
+}
+ol a {
+  padding: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  font-size: 0.9rem;
+}
+.welcome-container {
+   padding-top: 160px;
+    }
+      }
+.btn-custom.btn-green {
+  background-color: #28be56;
+  border-color: #28be56;
+          }
+.btn-custom {
+  margin-left: 60px;
+color: #FFF !important;
+font-size: 16px;
+line-height: 52px;
+font-weight: 700;
+white-space: nowrap;
+background-color: #3498db;
+padding: 14px 40px;
+border: 1px solid #3498db;
+outline: none !important;
+border-radius: 4px;
+}
+
+  .welcome-text p {
+    margin-bottom: 40px;
+      }
+  .welcome-text h1 {
+  font-weight: normal;
+  padding-top: 80px;
+  font-size: 40px;
+      }
+.margin-right-10 {
+  margin-right: 10px;
+      }
+.phones {
+  width: 30%;
+  float: right;
+  position: relative;
+  margin-left: 800px;
+  margin-top: -28%;
+
+}
+.white {
+  width: 70%;
+
+}
+
+.black {
+
+width: 70%;
+position: absolute;
+right: 60%;
+top: 10px;
+
+
+}
