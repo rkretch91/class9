@@ -1,126 +1,62 @@
-body, html {
-	margin: 0;
-	padding: 0;
+body,html {
 	font-size: 16px;
-	background-image: url(bg001.jpg);
-	font-family: Orbitron;
-	width: 100%;
-	background-size: cover;
-	background-repeat: no-repeat;
-
-}
-body {
-	background-color: black;
-	height: auto;
-}
-a {
-	text-decoration: none;
-	color: white;
-	float: right;
-	padding-right: 30px;
-	font-size: 24px;
-}
-ul {
+	margin: 0;
 	padding: 0;
+	font-family: Orbitron;
+	height: 100%;
+	background: url(bg001.jpg);
+}
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: box;
+}
+header {
+	background-color: black;
+	padding: 20px;
+}
+h1 {
+	color: white;
 	margin: 0;
 }
-nav li {
-	display: inline;
-}
-nav {
-	margin-top: 40px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	display: block;
-	height: auto;
-	background: rgba(0, 0, 0, .5);
-}
-h1, p {
-	margin-bottom: 20px;
-	color: white;
+.subnavy {
 	text-align: center;
+	padding: 10px;
+	color: white;
 }
-p {
-	font-size: 20px;
-    padding: 0;
-    margin: auto;
+.container {
+	display: flex;
+	width: 100%;
 }
-.row {
-	width: 800px;
-	height: 1000px;
-	margin: auto;
-	background: rgba(0, 0, 0, .3);
-	position: relative;
-	padding: 0;
+.menu {
+	background-color: #FFF;
+	color: #222;
+	padding: 10px;
+	width: 200px;
 }
 .content {
-	position: relative;
-	margin: 0;
-	padding: 0;
+	background-color: #efefef;
+	width: 100%;
+	color: #000;
+	padding: 10px;
+	display: flex;
+	flex-flow: wrap;
 }
-.img1 {
-	position: absolute;
-	width: 400px;
-	height: 250px;
-	padding: 0;
-	margin: 0;
+.movie-container {
+	max-width: 250px;
+	width: 50%;
+	padding: 10px;
 }
-.img2 {
-	position: absolute;
-	width: 400px;
-	height: 250px;
-	padding: 0;
-	margin: 0;
-	top: 0;
-	right: 0;
+.movie {
+	border: 1px solid #ccc;
+	
+	max-width: 250px;
 }
-.img3 {
-	position: absolute;
-	width: 400px;
-	height: 250px;
-	padding: 0;
-	margin: 0;
-	top: 500px;
-	left: 0;
+.movie:hover {
+	box-shadow: 0 0 5px 5px black;
+	border: 1px solid #ccc;
 }
-.img4 {
-	position: absolute;
-	width: 400px;
-	height: 250px;
-	padding: 0;
-	margin: 0;
-	top: 500px;
-	right: 0
-}
-.content1 {
-	position: absolute;
-	left: 0; 
-	top: 260px; 
-	width: 400px; 
-	height: 150px;
-}
-.content2 {
-	position: absolute; 
-	right: 0; 
-	top: 260px; 
-	width: 400px; 
-	height: 150px;
-}
-.content3 {
-    position: absolute; 
-    left: 10px; 
-    top: 760px; 
-    width: 400px; 
-    height: 150px
-}
-.content4 {
-	position: absolute;
-	left: 400px;
-	top: 750px;
-	width: 400px;
-	height: 150px;
-}
-.row a {
-	float: left;
-	color: red;
+.movie-titel {
+	font-size: 12px;
+	padding: 20px;
 }
