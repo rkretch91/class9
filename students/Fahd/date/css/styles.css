@@ -1,0 +1,332 @@
+ /*==========BIRTHDAY FORM ========================================================================================================================*/
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;}
+   
+   body, html {
+    font-family: 'Maven Pro', sans-serif;
+    font-size: 16px;
+    text-align: center;}
+    
+   
+   /*==========Global Section==========*/
+   
+   .global-birth {
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 10%;
+    position: relative;
+    text-align: center;}
+   
+   
+    /*==========BIRTHDAY FORM  ====================*/
+   
+   
+   .birth-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    margin: auto;}
+   
+   
+   input[type=text] {
+    height: 50px;
+    padding-left: 1%;
+    border: 2px dashed #668e8e;
+    border-radius: 5px;
+    font-size: 1rem;}
+   
+   .birth {
+    margin-bottom: 50px;
+    background-image: url(../img/board.png);
+    background-position: 99%;
+    background-size: 80px;
+    background-repeat: no-repeat;}
+   
+   input[type=submit] {
+    width: 100%;
+    background-color: #668e8e;;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;}
+   
+   input[type=submit]:hover {
+   background-color:#4c7c7c;}
+
+   input[type=date] {
+     display: inline;
+     float: left;
+     list-style: none;
+   }
+   .container{
+     display: inline-block;
+   }
+   
+   
+   /*==========PAGE COUNTER==========*/
+   
+   .pages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin: 100px 0 50px 0;}
+   .dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    border: 1px solid #7fa1a1;
+    background-color: rgba(229,236,236);}
+   
+    .one, .two, .three, .four, .five {
+      background-color: #668e8e;}
+   
+   
+   /*==========FOOTER====================*/
+   
+   /*==========Answers==========*/
+   .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;}
+   
+   .answered::before {
+    content: "5 of 14 answered";
+    color: #4c7c7c;
+    font-weight: 200;
+    font-size: 1rem;}
+    
+   
+   
+   /*==========Buttons==========*/
+   .rows-btn {
+    border-color: transparent;
+    border-radius: 15px;
+    box-shadow: none;
+    background: transparent;
+    min-width: 100px;
+    height: 50px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;}
+   
+   .rows {
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+   
+   .btn-down {
+    margin-left: 20px;}
+   
+   .rows-btn:hover {
+    background-color:#4c7c7c;}
+   
+   .btn-up{
+    background: url('../img/arrow-up.png') center no-repeat;
+    background-size: contain;
+    background-color: #668e8e;}
+   
+   .btn-down{
+    background: url('../img/arrow-down.png') center no-repeat;
+    background-size: contain;
+    background-color: #668e8e;}
+   
+   
+   
+    /*==========MEDIA QUERY  =====================================================*/
+   
+   @media only screen and (max-width: 600px) {
+   
+   /*==========Global Section==========*/
+   .global-birth {
+    margin: 10% 2% 0 2%;}
+   
+   /*==========Page Counter==========*/
+   .footer {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction:column;}
+   
+   .answered {
+    margin-bottom: 70px;}
+   
+   .pages {
+    margin: 50px 0 50px 0;}
+   
+   .rows {
+    margin-bottom: 50px;}
+   
+   .birth {
+    background-size: 60px;}
+   }
+   
+   $primary: #b670f4;
+$radius: 12px;
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f7fa;
+  color: #333;
+}
+
+.calendar {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -225px;
+  margin-left: -195px;
+  width: 360px;
+  padding: 15px;
+  box-shadow: 1px 1px 20px 0 rgba(0, 0, 0, 0.4);
+  border-radius: $radius;
+  overflow: hidden;
+
+  &--nav {
+    margin: -15px -15px 15px;
+    padding: 0 15px;
+    background-color: $primary;
+    color: #fff;
+    height: 70px;
+    position: relative;
+
+    a {
+      position: absolute;
+      cursor: pointer;
+      left: 10px;
+      font-size: 32px;
+      line-height: 1;
+      top: 16px;
+      width: 30px;
+      text-align: center;
+      display: inline-block;
+      color: transparentize(#fff, 0.6);
+      user-select: none;
+
+      &:hover {
+        color: #fff;
+      }
+
+      &:last-child {
+        left: auto;
+        right: 10px;
+      }
+    }
+
+    h1 {
+      margin: 0;
+      position: absolute;
+      left: 40px;
+      right: 40px;
+      text-align: center;
+      cursor: pointer;
+      font-weight: 400;
+      font-size: 30px;
+      line-height: 66px;
+      user-select: none;
+    }
+
+    small {
+      font-weight: 300;
+      font-size: 60%;
+    }
+  }
+
+  &--days {
+    font-size: 0;
+    
+    span {
+      width: 14.28571%;
+      display: inline-block;
+      text-align: center;
+      user-select: none;
+      cursor: pointer;
+      margin: 8px 0;
+      line-height: 34px;
+      position: relative;
+      font-size: 16px;
+
+      &.label {
+        text-transform: uppercase;
+        font-weight: 700;
+        color: rgba(0, 0, 0, 0.3);
+        font-size: 14px;
+        cursor: initial;
+      }
+
+      &.active {
+        font-weight: 700;
+        background-color: transparentize($primary, 0.95);
+        border-radius: $radius;
+      }
+
+      &.muted {
+        color: rgba(0, 0, 0, 0.3);
+      }
+
+      &.between {
+        border-radius: 0;
+      }
+
+      &.start, &.between, &.end {
+        background-color: #b670f4;
+        color: #fff;
+      }
+
+      &.start {
+        border-radius: $radius 0 0 $radius;
+      }
+
+      &.end {
+        border-radius: 0 $radius $radius 0;
+      }
+
+      &.start.end {
+        border-radius: $radius;
+      }
+
+      &.between:nth-child(7n):after, &.start:nth-child(7n):after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        background-color: #b670f4;
+        width: 20px;
+      }
+
+      &.between:nth-child(7n + 1):after, &.end:nth-child(7n + 1):after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 100%;
+        background-color: #b670f4;
+        width: 20px;
+      }
+
+      &.start.end:after {
+        display: none;
+      }
+    }
+  }
+}
+
+
+   
+   
+   Message Input
+   
+   Message @Anna

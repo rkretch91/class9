@@ -1,20 +1,14 @@
 body{
   background-color: #fff;
   box-sizing: bordedr-box;
-  margin: 0;
-  padding: 0;
 }
 header{
-
-}
-.header1 {
-  position: absolute;
-  top: 40px;
   background-color: #fff;
-  border-bottom: 1px solid rgba(0,0,0,.0975);
-  height: 70px;
-}
+      border-bottom: 1px solid rgba(0,0,0,.0975);
+      height: 70px;
+      position: relative;
 
+}
 .icon{
 width: 50px;
 float: left;
@@ -91,6 +85,8 @@ transition: all 0.7s ease 0s;
 
 }
 
+
+
 .cookie-container {
     position: relative;
 
@@ -101,7 +97,6 @@ transition: all 0.7s ease 0s;
     padding: 14px;
     color: #777;
     font-size: 12px;
-    height: 50px;
 }
 .cookie p {
     margin: auto;

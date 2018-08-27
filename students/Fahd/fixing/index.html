@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resturantlist"></div>
+   <button onclick="myfunc()">Delivery</button>
+   <div id="order"></div>
+
+   <div id="bookslist"></div>
+   
+              
+    <script>
+    
+    
+    
+    let resturant = {
+        name: "Oases",
+        open: 10,
+        close: 22,
+        dailyDishes: ["Falafel", "Hummus", "Schwarma in Wrap", "Pizza"]
+    }
+    console.log(resturant);
+    document.getElementById("resturantlist").innerHTML = resturant.name;
+    document.getElementById("resturantlist").innerHTML = resturant.name + "<br>" + resturant.open;
+    document.getElementById("resturantlist").innerHTML = resturant.name + "<br>" + resturant.open;
+    document.getElementById("resturantlist").innerHTML = resturant.name + "<br>" + resturant.open + "<br>" + resturant.close;
+    document.getElementById("resturantlist").innerHTML = resturant.name + "<br>" + resturant.open + "<br>" + resturant.close + "<br>" + resturant.dailyDishes;
+    
+    function myfunc(){
+        var time = new Date().getHours(); 
+        if (time < resturant.close && time > resturant.open) {
+            document.getElementById("order").innerHTML = "on the way!";
+        }else { 
+            document.getElementById("order").innerHTML = "night not working";
+
+        }
+    }
+    let books =[
+        {
+            title: "inferno",
+            author: "Dan Brown",
+            cover: "red",
+            donereading: false,
+         },
+    {
+        title: "da vinci code",
+        author: "Dan Brown",
+        cover: "blue",
+        donereading: true,
+    },
+    {  title: "iluminati",
+        author: "Dan Brown",
+        cover: "brown",
+        donereading: true,
+
+    }
+
+
+
+    ]
+    let bookslist ="";
+    for(let i = 0; i < books.length; i++){
+        bookslist += '<div>' + books[i].title + '</div>';
+    }
+console.log(books);
+
+
+    </script>
+   
+    
+</body>
+</html>

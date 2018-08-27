@@ -1,0 +1,55 @@
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    /* background-color: rgb(156, 132, 132); */
+    border-color: black;
+  }
+  
+  .flex-container > div {
+    /* background-color: #f1f1f1; */
+    width: 400px;
+    margin: 5px;
+    text-align: center;
+    height: 50px;
+    font-size: 50px;
+  }
+
+  .flex-container-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    /*background-color: rgb(156, 132, 132);*/
+    border-color: black;
+  }
+  
+  .flex-container-2 > div {
+    /*background-color: #f1f1f1;*/
+    width: 400px;
+    margin: 5px;
+    text-align: center;
+    height: 50px;
+    font-size: 50px;
+  }
+  #car {
+    background: url(/images/car.jpg) center no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
+  }
+  .police {
+    background: url(/images/police.jpeg) center no-repeat;
+    background-size: cover;
+    transform: scaleX(-1);
+
+  }
+  .finish1 {
+    background: url(/images/finish.png) center no-repeat;
+    background-size: cover;
+    
+
+  }
+
+  .finish2 {
+    background: url(/images/finish.png) center no-repeat;
+    background-size: cover;
+    
+
+  }

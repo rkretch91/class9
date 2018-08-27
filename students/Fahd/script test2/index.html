@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+   
+   <div id="green" style="background-color: green">&nbsp;</div>
+   <div id="blue" style="background-color: blue">&nbsp;</div>
+   <div id="red" style="background-color: red">&nbsp;</div>
+   
+   <button onclick="removeColor('green')">remove green</button>
+   <button onclick="removeColor('blue')">remove blue</button>
+   <button onclick="removeColor('red')">remove red</button>
+   <br><br>
+
+   <div id="green" style="background-color: transparent">one;</div>
+   <div id="blue" style="background-color: transparent">two;</div>
+   <div id="red" style="background-color: transparent">three;</div>
+   
+   <button onclick="changeColor('green', 'one')">one</button>
+   <button onclick="changeColor('blue', 'two')">two</button>
+   <button onclick="changeColor('red', 'three' )">three</button>
+   <br><br>
+
+
+   
+   <script>
+       function removeColor(color){
+           let id = '#' +color;
+           document.querySelector(id).style.backgroundColor = 'transparent';
+
+       }
+    
+       function changeColor(color ,id){
+           let id = '#' +color;
+          // document.querySelector('#' id).style.backgroundColor = 'color';//
+          document.getElementById(id).style.background = 'color';
+
+       }
+    
+    
+    </script>
+    
+</body>
+</html>

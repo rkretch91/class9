@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Forms</title>
+</head>
+
+<label>Square this number:
+        <input type="number" id="square-input" size="2">
+      </label>
+      <button id="square-button">Calculate</button>
+      <br><br>
+      <div id="result"></div>
+      <label>Half this number:
+            <input type="number" id="half-input" size="2">
+          </label>
+          <button id="half-button">Calculate</button>
+          <br><br>
+          <div id="result-2"></div>
+    <script>
+ function myfunc(y){
+    let x = y * y;
+    return x; 
+};
+document.getElementById("square-button").addEventListener("click", function(){
+    let y = document.getElementById ("square-input").value;
+    document.getElementById("result").innerHTML = myfunc(y);
+})
+
+function myFunction(b){
+    let u = b / 2;
+    return u;
+    };
+    document.getElementById("half-button").addEventListener("click", function(){
+        let b = document.getElementById("half-input").value;
+        document.getElementById("result-2").innerHTML = myFunction(b);
+        
+
+    })
+    
+
+
+
+    </script>
+    
+    
+    
+</body>
+</html>

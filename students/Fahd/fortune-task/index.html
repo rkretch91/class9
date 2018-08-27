@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+<input id="clickMe" type="button" value="click me" onclick="fortune();" />
+<div id="result"></div>
+
+<input id="dog age" type="button" value="clickhere" onclick="calculateDogAge()";/>
+<div id="age result"></div>
+ <script>
+    
+    let options = {
+        children:['1 kid', '2 kids', '3 kids', '4 kids', '5 kids',],
+         partner: ['sarah', 'sabine', 'elena', 'scarlet'],
+         country: ['germany', 'russia', 'syria', 'italy'],
+         job: ['ceo', 'teacher','footballplayer', 'zookeeper'],
+    
+    };
+    function fortune() {
+ document.getElementById("result").innerHTML= "You will be a " 
+ + options.job[getRandomIndex()] 
+ + " in " 
+ + options.country[getRandomIndex()] 
+ + ", and married to  " 
+ + options.partner[getRandomIndex()] 
+ + "  you shall get " 
+ + options.children[getRandomIndex()];
+};
+
+function getRandomIndex() {
+return Math.floor((Math.random() * 4));
+};
+
+
+
+
+function calculateDogAge(s){
+y = s * 7
+};
+calculateDogAge(3);
+console.log(y); 
+    
+    </script>
+    
+</body>
+</html>
