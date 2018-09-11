@@ -1,0 +1,36 @@
+
+<div id="content">
+    <ul id="list">
+        <li>John Doe</li>
+        <li>Anna Smith</li>
+        <li>Peter Jones</li>
+    </ul>
+</div>
+
+<script>
+  let people =`John|Doe|23|Franfurt am Main
+  Anna|Smith|30|Berlin
+  Peter|Jones|99|Berlin`;
+
+  let result = [];
+  let persons = people.split('\n');
+  let person;
+  let tmp;
+  for (let i in persons) {
+      tmp = persons[i].split('|');
+      person = {
+        firstName: tmp[0],
+        age: tmp[2],
+        city: tmp[3]
+      };
+      result.push(person);
+  }
+  console.log(result);
+
+  var txt = '[{"name":"John", "age":30, "city":"New York"},{"age":31,"name":"Anna", "city":"York"}]'
+  var obj = JSON.parse(txt);
+  console.log(obj);
+  obj[0]['name'] = 'New name';
+  var jsonString = JSON.stringify(obj);
+  console.log(jsonString);
+</script>
